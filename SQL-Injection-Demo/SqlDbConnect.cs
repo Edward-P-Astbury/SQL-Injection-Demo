@@ -21,7 +21,6 @@ namespace SQL_Injection_Demo
             _connection.Open();
         }
 
-        // Insecure way.
         public void SqlQuery(string query)
         {
             _command = new SqlCommand(query, _connection);
